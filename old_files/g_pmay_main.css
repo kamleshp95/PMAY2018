@@ -1,0 +1,337 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	/* background: url(Images/urben.jpg) scroll; */
+	text-align:center;
+}
+
+.body {
+  margin: 0px auto auto;
+  background: transparent url(bg2.jpg) repeat-y fixed center top;
+  text-align: center;
+  height: 768px;
+  width: 1340px;
+} 
+.h1 {
+  font-family: arial;
+  text-align: left;
+}
+.main {
+  margin: 5px auto auto;
+  background: transparent repeat scroll center ;
+  background-color: rgba(30,170,84,0.5);
+  min-width: 1000px;
+  height: 1180px;
+  width: 768px;
+  border-radius:5px;
+  animation:atop 1s;
+  
+}
+
+.h-bar > input {
+  margin: 10px 3px;
+  float: right;
+}
+/*---------------StartOfDropDown-menu----------------------*/
+
+.dd-menu{
+	font-family:Times New Roman;
+	font-size:25;
+	list-style:none;
+	margin-top:0px;
+	margin-left:2px;
+}
+.dd-menu li{
+	 background-color:#BEDD72;
+	 /*border:1px solid black;*/
+	 margin-left:0px;
+	 width:181px;
+	 height:40px;
+	 line-height:35px;
+	 text-align:center;
+	 display: inline-block ;
+	 border-radius:0px;
+}
+.dd-menu li a{
+	 text-decoration:none;
+	 margin-top:3px;
+	 color:black;
+	 display:block;
+}
+.dd-menu li a:hover{
+	/*font-style:bold;*/
+	background:#58BF3A;
+	color:white;
+	font-family:Times New Roman;
+	border-radius:0px;
+	margin-top:-0.7px;
+	box-shadow: 3px 3px 5px grey;
+}
+.dd-menu ul{
+	display:none;
+	position:relative;
+	list-style:none;
+}
+.dd-menu ul li{
+	background-color:khaki;
+	border:1px solid orange;
+	
+}
+.dd-menu li:active >ul {
+	margin:0px;
+	display:block;
+}
+.top-bar{
+	/*background: linear-gradient(red,orange, yellow);*/
+	background-image:url(g.jpg);
+	border: 1px outset orange;
+	position:fixed;
+	z-index:1;
+	height:85px;
+	width:990px;
+	margin:0px auto auto auto;
+	border-radius:10px;
+}
+/*---------------EndOfDropDown-menu----------------------*/
+
+/*-------------------------------------------------------------------*/
+.navigation{
+	text-align:left;
+	margin-top:110px;
+	font-size:20px;
+	font-family:Forte;
+}
+
+/*------------------EOF side menu-------------*/
+
+.links{
+	margin :30;
+	font-size:28;
+	font-weight: 10;
+	color:blue;
+	
+}
+
+.input{
+    width: 400px;
+    padding: 15px 15px;
+    margin: 6px 20px;
+    box-sizing: border-box;
+	font-size:20;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------*/
+/*left-menu*/
+
+.left-menu{
+	list-style:none;
+	margin-top:12;
+	
+}
+.left-menu li{
+	 border:1px solid black;
+	 margin-left:5;
+	 line-height:35px;
+	 text-align:left;
+	 border-radius:5px;
+}
+.left-menu li a{
+	 text-decoration:none;
+	 color:blue;
+	 display:block;
+}
+.left-menu li a:hover{
+	background:aqua;
+	color:green;
+}
+.left-menu ul{
+	display:none;
+	position:relative;
+	list-style:none;
+}
+.left-menu ul li{
+	background-color:white;
+	
+}
+/left-menu li:active>ul {
+	margin:0px;
+	display:block;
+}
+
+
+
+
+/*End left menu */
+.left_content{
+	text-align:left;
+	position:fxed;
+	width:150px;
+	margin-left:10px;
+	border:1px solid yellow;
+	
+	
+}
+.btn1 form{
+	display:none;
+}
+.btn1 input:hover >form {
+	display:block;
+}
+
+/*-----------------------------------------------------------for form content(log in form)-------------------------------------*/
+
+form input, form button,.button,form textarea {
+  width: 212px;
+  border: 1px solid;
+  border-bottom-color: rgba(255,255,255,.5);
+  border-right-color: rgba(60,60,60,.35);
+  border-top-color: rgba(60,60,60,.35);
+  border-left-color: rgba(80,80,80,.45);
+  background-color: rgba(0,0,0,.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  font: bold .875em/1.25em "Open Sans Condensed", sans-serif;
+  letter-spacing: .075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  margin-bottom: 19px;
+  border-radius:6px;
+}
+
+form input:focus { background-color: rgba(0,0,0,.4); }
+
+#success{
+	display:none;
+}
+
+
+/*---------------------------------------Right Notification--------------------------------------*/
+.move {
+	color:blue;
+	font-size:20;
+	font-family:Times New Roman;
+	
+	animation-name: example;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	/*animation-delay: 2s;*/
+	animation-iteration-count: infinite;
+	position:absolute;
+	animation-fill-mode: forwards;
+	
+}
+
+
+@keyframes example {
+	0%{opacity:0;margin-top: 501px;}
+	21%{opacity:0;}
+	22%{opacity:1;}
+    100%{opacity:1;margin-top: 0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------ads on home page--------------*/
+
+.ad2{
+	display:none;
+	position:absolute;
+	left:10px;
+	bottom:0;
+	padding:0.01em 16px;
+	background-color:rgba(0,0,0,0.1);
+	width:55%;
+	animation:zoom 1S;
+}
+
+.ad:hover .ad2{
+	display:table;
+}
+
+
+/*-*-----------------slide show fade in ----------*/
+
+
+.wk{
+	position:relative;
+	animation:atop 1s;	
+}
+
+
+.pmay_log_opt{
+	background-color:#ffa667;
+    background-image: linear-gradient(to right, #ffa667, #f38a41);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+	height: 90px;
+	justify-content: space-between;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 22px;
+}
+.pmay_log_opt:hover{
+	text-decoration: none;
+	color: #ffffff;
+    background: #ff8229;
+}
+.pmay_log_opt_1 > .pmay_log_opt{
+	border-bottom: 1px solid #793505;
+}	
+
+
+@keyframes fade{
+	0%{opacity:0;}
+	5%{opacity:1;}
+	95%{opacity:1;}
+	100%{opacity:0;}
+}
+
+@keyframes zoom{
+	from{opacity:0;}
+	to{opacity:1}
+}
+
+@keyframes atop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes al{
+	from{left:-300px;opacity:0;}
+	to{left:0px;opacity:1;}
+}
+
+@keyframes ar{
+	from{right:-300px;opacity:0;}
+	to{right:0px;opacity:1;}
+}
+
+@keyframes ab{
+	from{bottom:-300px;opacity:0;}
+	to{bottom:0px;opacity:1;}
+}
