@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMAY | Contact</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-----------------------Html file index for PMAY------------------------------>
+</head>
+
+<body>
+
+    <div class="container">
+        <!----------------------------------------------Header------------------------>
+        <div>
+            <img style="width: 100%;" alt="" src="Images/header.jpg">
+        </div>
+        <!-----------------------------------Menu--------------------------------------------->
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" id="main_nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">मुख्यपृष्ठ</a>
+            </li>
+            <li class="nav-item">
+                <a href="faq.html" class="nav-link">माहिती अधिकार</a>
+            </li>
+            <li class="nav-item">
+                <a href="gallary.html" class="nav-link">फोटो विभाग</a>
+            </li>
+            <li class="nav-item ">
+                <a href="help.html" class="nav-link">मदत</a>
+            </li>
+            <li class="nav-item">
+                <a href="subsidy_calculator.html" class="nav-link">सबसिडी कॅल्क्युलेटर</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link active">संपर्क</a>
+            </li>
+            <li class="nav-item">
+                <a href="grievance.html" class="nav-link">तक्रार</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ----------------------------------Side-Menu---------------------------------------
+            <div style="margin-left:2; height:500px; width:280px;">
+                <img src="Images\login.png" style="	height:180px; width:280px; " />
+                <ul class="side_menu">
+                    <li><a href="#">दस्तऎवज</a></li>
+                    <li><a href="#">एनपीव्ही सबसिडी कॅल्क्युलेटर</a></li>
+                    <li><a href="#">पीपीपी धोरण </a></li>
+                    <li><a href="#">कार्यशाळा</a></li>
+                    <li><a href="#">एसेसमेंट फॉर्म</a></li>
+                </ul>
+            </div> -->
+
+    <!------------------------------------Main content------------------------------------------>
+    <!-- <div style="margin-top:-500;margin-left:300px; height:500; width:700;background:rgba(250,250,250,.7);"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 py-5">
+                <div class="pmay_contact_div">
+                    <div class="pmay_heading text-center">
+                        संपर्क
+                    </div>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">पहिले नाव *</label>
+                                        <input id="form_name" type="text" name="name"
+                                            class="form-control form-control-sm"
+                                            placeholder="कृपया आपले पहिले नाव प्रविष्ट करा" required="required"
+                                            data-error="Firstname is required.">
+                                        <!-- <div class="help-block with-errors"></div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">आडनाव *</label>
+                                        <input id="form_lastname" type="text" name="surname"
+                                            class="form-control form-control-sm"
+                                            placeholder="कृपया आपले आडनाव प्रविष्ट करा" required="required"
+                                            data-error="Lastname is required.">
+                                        <!-- <div class="help-block with-errors"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">ई - मेल *</label>
+                                        <input id="form_email" type="email" name="email"
+                                            class="form-control form-control-sm"
+                                            placeholder="कृपया आपला ईमेल प्रविष्ट करा" required="required"
+                                            data-error="Valid email is required.">
+                                        <!-- <div class="help-block with-errors"></div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">कृपया तुमची गरज निर्देश करा *</label>
+                                        <select id="form_need" name="need" class="form-control form-control-sm"
+                                            required="required" data-error="Please specify your need.">
+                                            <option value="">------पर्याय निवडा------</option>
+                                            <option value="Request quotation">विनंती कोटेशन</option>
+                                            <option value="Request order status">विनंती ऑर्डर स्थिती</option>
+                                            <option value="Request copy of an invoice">पावतिची प्रत विनंती </option>
+                                            <option value="Other">इतर</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">संदेश *</label>
+                                        <textarea id="form_message" name="message" class="form-control form-control-sm"
+                                            placeholder="माझ्यासाठी संदेश" rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="संदेश पाठवा">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--------------------------------------right-side-menu--------------------------------------->
+    <!-- <div style="margin-left:1010px;margin-top:-500px; height:500px; width:257px; border: 1px outset pink;z-index:-1; background:rgba(90,20,40,.3);">
+                <b class="" style="text-align:center; color:aqua; font-size:40;">Notifications:<b>
+		<marquee direction="up" style="margin-top:10; height:500px; color:white; font-size:30; font-weight: bold; font-family:Lucida Calligraphy; margin-left:10px;">
+		notification1<br>
+		hellow world<br>
+		welcome to PMAY<br>
+		this is simple animation<br>
+		of up direction<br>
+		</marquee>
+            </div> -->
+    <footer>
+        <div class="container d-flex">
+            <div>
+                <a href="/">Home </a> |
+                <a href="#" target="_blank"> Terms & Conditions </a> |
+                <a href="#" target="_blank"> Privacy Policy</a>
+            </div>
+            <div>
+                Copyright©2018 Sabretooth, All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------------Eof main content---------------------------->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/src.js"></script>
+
+
+</body>
+
+</html>

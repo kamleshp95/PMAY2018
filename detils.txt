@@ -1,0 +1,9 @@
+this is website upto 23rd of 12:31 AM (night of 22nd);
+new login form is added; and background is added
+
+23/03/2018-IV
+-some kind simple w3 animation is added 
+-suraj's form is added 
+-परिचय tab is added
+-right coulmn is fixed
+

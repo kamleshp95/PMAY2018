@@ -1,0 +1,25 @@
+/*-------------------------Navbar---------------------*/
+
+#main_nav {
+    background-color: #bedd72;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+#main_nav.nav-pills .nav-link {
+    background-color: #bedd72;
+    color: #000000;
+    border-radius: 0;
+}
+
+#main_nav.nav-pills .nav-link:hover {
+    background: rgb(116, 218, 85);
+}
+
+#main_nav.nav-pills .nav-link.active,
+#main_nav.nav-pills .show>.nav-link {
+    background: #58bf3a;
+    color: #000000;
+    /* font-weight: bold; */
+}

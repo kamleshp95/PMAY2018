@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMAY | Subsidy Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/complaint.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/w3.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+
+    <script>
+        var x = document.getElementById("success");
+
+        function success() {
+            x.display = "block";
+        }
+    </script>
+    <!-----------------------Html file index for PMAY------------------------------>
+</head>
+
+<body>
+    <div class="container">
+        <!----------------------------------------------Header------------------------>
+        <div>
+            <img style="width: 100%;" alt="" src="Images/header.jpg">
+        </div>
+        <!-----------------------------------Menu--------------------------------------------->
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" id="main_nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">मुख्यपृष्ठ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab1Id" class="nav-link">माहिती अधिकार</a>
+            </li>
+            <li class="nav-item">
+                <a href="s_complaint.html" class="nav-link">तक्रार</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">मदत</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">मार्गदर्शिका</a>
+                    <a class="dropdown-item" href="#tab3Id">Another action</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#tab5Id" class="nav-link">फोटो विभाग</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">भागधारक</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">राज्ये</a>
+                    <a class="dropdown-item" href="#tab3Id">केंद्रे</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="g_contact_us.html" class="nav-link">संपर्क</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!------------------------------------Main content------------------------------------------>
+    <!-- <div style="margin-top:-500;margin-left:300px; height:500; width:700;background:rgba(250,250,250,.7);"> -->
+    <div class="container">
+        <div class="pl-transfer-main" style="margin-top:3%;">
+
+            <div class="transfer-inner">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 transfer-left">
+                        <div class="transfer-left-inner">
+                            <div class="common-section col-md-12">
+                                <h4>Annual Family Income</h4>
+                                <div class="white-overlay family-income-slider">
+                                    <div id="slider-family-income"
+                                        class="common-slider loan-range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                        <div id="custom-handle-family-income"
+                                            class="custom-loan-range-slider ui-slider-handle ui-corner-all ui-state-default"
+                                            style="left: 100%;"></div>
+                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min"
+                                            style="width: 100%;"></div>
+                                    </div>
+                                    <div class="slider-value">
+                                        <div class="loan-amount value">
+                                            <input type="text" name="" placeholder="" value=" 18,00,000"
+                                                id="family-income">
+                                            <span class="input-icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--price-slider-->
+                            </div>
+                            <div class="common-section col-md-12">
+                                <h4>Loan Amount</h4>
+                                <div class="white-overlay price-slider">
+                                    <div id="slider-loan-price"
+                                        class="common-slider loan-range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                        <div id="custom-handle-loan-price"
+                                            class="custom-loan-range-slider ui-slider-handle ui-corner-all ui-state-default"
+                                            style="left: 3.38983%;"></div>
+                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min"
+                                            style="width: 3.38983%;"></div>
+                                    </div>
+                                    <div class="slider-value">
+                                        <div class="loan-amount value">
+                                            <input type="text" name="" placeholder="" value="15,00,000"
+                                                id="loan-amount">
+                                            <span class="input-icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--price-slider-->
+                            </div>
+                            <div class="common-section col-md-12">
+                                <h4>Tenure(Months)</h4>
+                                <div class="white-overlay price-slider">
+                                    <div id="slider-tenure"
+                                        class="common-slider loan-range-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                        <div id="custom-handle-tenure"
+                                            class="custom-loan-range-slider ui-slider-handle ui-corner-all ui-state-default"
+                                            style="left: 62.963%;"></div>
+                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min"
+                                            style="width: 62.963%;"></div>
+                                    </div>
+                                    <div class="slider-value">
+                                        <div class="loan-amount value">
+                                            <input type="text" name="tenure" placeholder="" value="240"
+                                                id="loan-tenure">
+                                            <span class="input-icon"><i class="fa fa-calendar"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--price-slider-->
+                            </div>
+                            <div class="common-section col-md-12">
+                                <h4>Is this your First Pucca House?</h4>
+                                <div class="term-radio">
+                                    <label class="radio-inline"><input type="radio" name="first_pucca"
+                                            class="first_pucca" value="Yes" checked="checked">Yes</label>
+                                    <label class="radio-inline"><input type="radio" name="first_pucca"
+                                            class="first_pucca" value="No">No</label>
+                                </div>
+                            </div>
+                            <div class="common-section col-md-12 women-property-owner" style="display: none;">
+                                <h4>Is Woman Ownership Present in the Property Under Consideration?</h4>
+                                <div class="term-radio">
+                                    <label class="radio-inline"><input type="radio" name="womeninhouse"
+                                            class="womeninhouse" value="Yes" checked="checked" required="">Yes</label>
+                                    <label class="radio-inline"><input type="radio" name="womeninhouse"
+                                            class="womeninhouse" value="No" required="">No</label>
+                                </div>
+                            </div>
+                            <div class="common-section col-md-12 women-property" style="display:none">
+                                <h4>Is Woman a part of beneficiary family?</h4>
+                                <div class="term-radio">
+                                    <label class="radio-inline"><input type="radio" name="womeninhouse_property"
+                                            class="womeninhouse_property" value="Yes" required="">Yes</label>
+                                    <label class="radio-inline"><input type="radio" name="womeninhouse_property"
+                                            class="womeninhouse_property" value="No" checked="checked"
+                                            required="">No</label>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="common-section col-md-12 sq-ft-area" style="">
+                                <h4>What is your Carpet Area(Sq M)?</h4>
+                                <div class="white-overlay price-slider">
+                                </div>
+                                <div class="slider-value">
+                                    <div class="loan-amount value">
+                                        <input type="text" name="" placeholder="" id="carpet-area" value="50"
+                                            maxlength="4">
+                                        <span class="input-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--price-slider-->
+                            <div class="clearfix"></div>
+
+                        </div>
+
+                    </div>
+                    <!--transfer-left-inner-->
+                    <div class="col-md-6 col-sm-12 col-xs-12 transfer-right" style="display:block">
+                        <div class="save-amount">
+                            <h2 class="cashback-benefit">Scheme Details</h2>
+                            <div class="outputarea">
+                                <ul>
+                                    <li>
+                                        <h4>Subsidy Category</h4>
+                                        <div class="amount-section totalamount-saved gray">MIG-II</div>
+                                        <div class="tag-line">Middle Income Group - II</div>
+                                    </li>
+                                    <li>
+                                        <h4>Subsidy Amount </h4>
+                                        <div class="amount-section totalamount-saved maroon"><em><i class="fa fa-inr"
+                                                    aria-hidden="true"></i></em> 2,30,156</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row calculate text-center">
+                            <!--<div class="col-md-6">
+                      <div class="btn-style">
+                        <a onclick="calculate(0);"  class="btn">calculate</a>
+                      </div>
+                  </div>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/src.js"></script>
+    <script src="js/calc.js"></script>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

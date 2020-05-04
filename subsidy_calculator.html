@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMAY | Subsidy Calculator</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+
+    <script>
+        var x = document.getElementById("success");
+
+        function success() {
+            x.display = "block";
+        }
+    </script>
+    <!-----------------------Html file index for PMAY------------------------------>
+</head>
+
+<body>
+    <div class="container">
+        <!----------------------------------------------Header------------------------>
+        <div>
+            <img style="width: 100%;" alt="" src="Images/header.jpg">
+        </div>
+        <!-----------------------------------Menu--------------------------------------------->
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" id="main_nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">मुख्यपृष्ठ</a>
+            </li>
+            <li class="nav-item">
+                <a href="faq.html" class="nav-link">माहिती अधिकार</a>
+            </li>
+            <li class="nav-item">
+                <a href="gallary.html" class="nav-link">फोटो विभाग</a>
+            </li>
+            <li class="nav-item ">
+                <a href="help.html" class="nav-link">मदत</a>
+            </li>
+            <li class="nav-item">
+                <a href="subsidy_calculator.html" class="nav-link active">सबसिडी कॅल्क्युलेटर</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">संपर्क</a>
+            </li>
+            <li class="nav-item">
+                <a href="grievance.html" class="nav-link">तक्रार</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!------------------------------------Main content------------------------------------------>
+    <section class="subsidy_section">
+        <div class="container">
+            <div class="pmay_h_main">
+                <div class="pmay_heading">Subsidy Calculator</div>
+
+                <div class="transfer-inner">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12 pmay_sub_calc_div transfer-left">
+                            <div class="transfer-left-inner">
+                                <div class="common-section col-md-12">
+                                    <h4>Annual Family Income</h4>
+                                    <div id="slider-family-income"></div>
+
+                                    <div class="pmay_slide_val">
+                                        <div class="loan-amount value">
+                                            <input type="text" name="" placeholder="" value=" 18,00,000"
+                                                id="family-income">
+                                            <span class="input-icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                    <!--price-slider-->
+                                </div>
+                                <div class="common-section col-md-12">
+                                    <h4>Loan Amount</h4>
+                                    <div class="white-overlay price-slider">
+                                        <div id="slider-loan-price"></div>
+
+                                        <div class="pmay_slide_val">
+                                            <div class="loan-amount value">
+                                                <input type="text" name="" placeholder="" value="15,00,000"
+                                                    id="loan-amount">
+                                                <span class="input-icon"><i class="fa fa-inr"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--price-slider-->
+                                </div>
+                                <div class="common-section col-md-12">
+                                    <h4>Tenure(Months)</h4>
+                                    <div class="white-overlay price-slider">
+                                        <div id="slider-tenure"></div>
+
+                                        <div class="pmay_slide_val">
+                                            <div class="loan-amount value">
+                                                <input type="text" name="tenure" placeholder="" value="240"
+                                                    id="loan-tenure">
+                                                <span class="input-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--price-slider-->
+                                </div>
+                                <div class="common-section col-md-12">
+                                    <h4>Is this your First Pucca House?</h4>
+                                    <div class="term-radio">
+                                        <label class="radio-inline"><input type="radio" name="first_pucca"
+                                                class="first_pucca" value="Yes" checked="checked">Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="first_pucca"
+                                                class="first_pucca" value="No">No</label>
+                                    </div>
+                                </div>
+                                <div class="common-section col-md-12 women-property-owner" style="display: none;">
+                                    <h4>Is Woman Ownership Present in the Property Under Consideration?</h4>
+                                    <div class="term-radio">
+                                        <label class="radio-inline"><input type="radio" name="womeninhouse"
+                                                class="womeninhouse" value="Yes" checked="checked"
+                                                required="">Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="womeninhouse"
+                                                class="womeninhouse" value="No" required="">No</label>
+                                    </div>
+                                </div>
+                                <div class="common-section col-md-12 women-property" style="display:none">
+                                    <h4>Is Woman a part of beneficiary family?</h4>
+                                    <div class="term-radio">
+                                        <label class="radio-inline"><input type="radio" name="womeninhouse_property"
+                                                class="womeninhouse_property" value="Yes" required="">Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="womeninhouse_property"
+                                                class="womeninhouse_property" value="No" checked="checked"
+                                                required="">No</label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="common-section col-md-12 sq-ft-area" style="">
+                                    <h4>What is your Carpet Area(Sq M)?</h4>
+                                    <div class="white-overlay price-slider">
+                                    </div>
+                                    <div class="pmay_slide_val">
+                                        <div class="loan-amount value">
+                                            <input type="text" name="" placeholder="" id="carpet-area" value="50"
+                                                maxlength="4">
+                                            <span class="input-icon"><i class="fa fa-home"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--price-slider-->
+                                <div class="clearfix"></div>
+
+                            </div>
+
+                        </div>
+                        <!--transfer-left-inner-->
+                        <div class="col-md-6 col-sm-12 col-xs-12 pmay_sub_result_div" style="display:block">
+                            <div class="save-amount">
+                                <h2 class="cashback-benefit">Scheme Details</h2>
+                                <div class="pmay_sub_result">
+                                    <ul>
+                                        <li>
+                                            <h4>Subsidy Category</h4>
+                                            <div class="amount-section totalamount-saved gray text-info">MIG-II</div>
+                                            <div class="tag-line">Middle Income Group - II</div>
+                                        </li>
+                                        <li>
+                                            <h4>Subsidy Amount </h4>
+                                            <div class="amount-section totalamount-saved maroon text-success"><em><i
+                                                        class="fa fa-inr" aria-hidden="true"></i></em> 2,30,156</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row calculate text-center">
+                                <!--<div class="col-md-6">
+                      <div class="btn-style">
+                        <a onclick="calculate(0);"  class="btn">calculate</a>
+                      </div>
+                  </div>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container d-flex">
+            <div>
+                <a href="/">Home </a> |
+                <a href="#" target="_blank"> Terms & Conditions </a> |
+                <a href="#" target="_blank"> Privacy Policy</a>
+            </div>
+            <div>
+                Copyright©2018 Sabretooth, All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/src.js"></script>
+    <script src="js/calc.js"></script>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

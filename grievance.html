@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMAY | Complaint</title>
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/complaint.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/w3.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+
+    <script>
+        var x = document.getElementById("success");
+
+        function success() {
+            x.display = "block";
+        }
+    </script>
+    <!-----------------------Html file index for PMAY------------------------------>
+</head>
+
+<body>
+    <div class="container">
+        <!----------------------------------------------Header------------------------>
+        <div>
+            <img style="width: 100%;" alt="" src="Images/header.jpg">
+        </div>
+        <!-----------------------------------Menu--------------------------------------------->
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" id="main_nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">मुख्यपृष्ठ</a>
+            </li>
+            <li class="nav-item">
+                <a href="faq.html" class="nav-link">माहिती अधिकार</a>
+            </li>
+            <li class="nav-item">
+                <a href="gallary.html" class="nav-link">फोटो विभाग</a>
+            </li>
+            <li class="nav-item ">
+                <a href="help.html" class="nav-link">मदत</a>
+            </li>
+            <li class="nav-item">
+                <a href="subsidy_calculator.html" class="nav-link">सबसिडी कॅल्क्युलेटर</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">संपर्क</a>
+            </li>
+            <li class="nav-item">
+                <a href="grievance.html" class="nav-link active">तक्रार</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- <div style="height=500px ; background:rgba(150,150,150,.5);"> -->
+    <!------------------------------------Side-Menu----------------------------------------->
+    <!-- <div style="margin-left:2; height:500px; width:280px;">
+            <img src="Images\login.png" style="	height:180px; width:280px; " />
+            <ul class="side_menu">
+                <li><a href="#">दस्तऎवज</a></li>
+                <li><a href="#">एनपीव्ही सबसिडी कॅल्क्युलेटर</a></li>
+                <li><a href="#">पीपीपी धोरण </a></li>
+                <li><a href="#">कार्यशाळा</a></li>
+                <li><a href="#">एसेसमेंट फॉर्म</a></li>
+            </ul>
+        </div> -->
+
+
+    <!------------------------------------Main content------------------------------------------>
+    <!-- <div style="margin-top:-500;margin-left:300px; height:500; width:700;background:rgba(250,250,250,.7);"> -->
+    <div class="comtainer">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 py-2">
+                <div class="pmay_contact_div">
+                    <div class="pmay_heading text-center">
+                        तक्रार
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">
+                                    <!-- पहिले  -->
+                                    नाव
+                                </label>
+                                <input type="text" class="form-control form-control-sm" placeholder="नाव">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">आडनाव</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="आडनाव">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">ई - मेल</label>
+                                <input type="email" class="form-control form-control-sm" id="inputEmail4"
+                                    placeholder="आपला ई - मेल">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">पत्ता</label>
+                            <input type="text" class="form-control form-control-sm" id="inputAddress"
+                                placeholder="1234 मुख्य चौक ">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">पत्ता 2</label>
+                            <input type="text" class="form-control form-control-sm" id="inputAddress2"
+                                placeholder="अपार्टमेंट, स्टुडिओ किंवा मजला">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">शहर</label>
+                                <input type="text" class="form-control form-control-sm" id="inputCity"
+                                    placeholder="शहराचे नाव ">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">राज्य</label>
+                                <select id="inputState" class="form-control form-control-sm">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">पिनकोड</label>
+                                <input type="text" class="form-control form-control-sm" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <select id="inputState" class="form-control form-control-sm">
+                                    <option label="Aadhaar Related Issues" value="Aadhaar Related Issues">आधार संबंधित
+                                        समस्या
+                                    </option>
+                                    <option label="Portal Access / Performance Issues"
+                                        value="Portal Access / Performance Issues">
+                                        पोर्टल प्रवेश / कामगिरीचे मुद्दे</option>
+                                    <option label="User Registration" value="User Registration">वापरकर्ता नोंदणी
+                                    </option>
+                                    <option label="Scheme Related Issue" value="Scheme Related Issue">योजना संबंधित
+                                        समस्या</option>
+                                    <option label="Application Registration/ Submission Process"
+                                        value="Application Registration/ Submission Process">अर्ज नोंदणी / सबमिशन
+                                        प्रक्रिया</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">संदेश</label>
+                                    <textarea id="form_message" name="message" class="form-control form-control-sm"
+                                        placeholder="आमच्यासाठी संदेश" rows="4" required="required"
+                                        data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success btn-send" value="संदेश पाठवा">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container d-flex">
+            <div>
+                <a href="/">Home </a> |
+                <a href="#" target="_blank"> Terms & Conditions </a> |
+                <a href="#" target="_blank"> Privacy Policy</a>
+            </div>
+            <div>
+                Copyright©2018 Sabretooth, All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------------Eof main content---------------------------->
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/src.js"></script>
+    <!-- </div> -->
+</body>
+
+</html>
+</body>
+
+</html>
